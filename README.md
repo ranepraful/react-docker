@@ -35,6 +35,15 @@ it's a configuration file that tells docker
 
 <img width="1015" height="407" alt="image" src="https://github.com/user-attachments/assets/6545f73e-6926-407d-a968-48127ed16acb" />
 
+## Docker compose watch
+Docker Compose Watch is a development feature that monitors source code changes and automatically syncs or rebuilds containers, enabling faster feedback during local development.
+Think of Compose Watch like Live Reload / Hot Reload:
+<img width="992" height="409" alt="image" src="https://github.com/user-attachments/assets/bbdb298f-5853-40da-b36d-6130e2ab48a3" />
+<img width="974" height="334" alt="image" src="https://github.com/user-attachments/assets/6e2d421a-5d0d-40c4-9eee-8366563f6b9e" />
+<img width="1203" height="455" alt="image" src="https://github.com/user-attachments/assets/c5e8034c-3c4f-458b-a21d-183cd9c8d347" />
+
+
+
 
 ## Screenshots
 <img width="1914" height="838" alt="image" src="https://github.com/user-attachments/assets/efd2e48e-512e-42ae-8f38-8a054fd34a18" />
