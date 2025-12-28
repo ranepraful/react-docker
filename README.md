@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# What is Docker ?
+Docker allows you to package an application with its dependencies so it runs consistently across different environments.
+Resolves "Works on my machine" issue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Image 
+it acts as blueprint for docker container, instructions how to create container
 
-Currently, two official plugins are available:
+## Container
+running instance of Image, this is a actual running app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dockerfile
+it's a text file that says, which base software to use, what files to copy, how to start the app
 
-## React Compiler
+## Port mapping
+Port mapping connects a port inside the container to a port on your laptop.
+It creates a bridge between your machine(host) and container
+<img width="993" height="462" alt="image" src="https://github.com/user-attachments/assets/1abfdb94-45a6-4cdc-a537-7e2c344c42fd" />
+<img width="1006" height="521" alt="image" src="https://github.com/user-attachments/assets/c53dc007-5883-42ff-b68c-476080e3b14f" /> 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Docker hub
+Docker Hub is a cloud-based registry service that allows developers to store, share, and manage Docker images.
+Docker Hub is for sharing runnable applications, not source code collaboration.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## docker-compose.yml
+Docker Compose is a manager that starts multiple Docker containers together using one file and one command.
+think it as remote control for many containers
+it's a configuration file that tells docker
+1) Which containers are needed
+2) How they connect
+3) Which ports to use
+4) Environment variables
+5) Startup order
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<img width="1015" height="407" alt="image" src="https://github.com/user-attachments/assets/6545f73e-6926-407d-a968-48127ed16acb" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Screenshots
+<img width="1914" height="838" alt="image" src="https://github.com/user-attachments/assets/efd2e48e-512e-42ae-8f38-8a054fd34a18" />
