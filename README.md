@@ -21,6 +21,13 @@ It creates a bridge between your machine(host) and container
 Docker Hub is a cloud-based registry service that allows developers to store, share, and manage Docker images.
 Docker Hub is for sharing runnable applications, not source code collaboration.
 
+## Docker Volumes
+A Docker volume is a persistent storage mechanism used to store data outside containers so that data is not lost when containers are stopped or removed
+<img width="966" height="310" alt="image" src="https://github.com/user-attachments/assets/07e67eef-139b-43bf-987f-52ca5aa70e78" />
+<img width="988" height="203" alt="image" src="https://github.com/user-attachments/assets/94d0b8a8-2654-41d4-8c73-e883e07e7bca" />
+
+
+
 
 
 ## docker-compose.yml
